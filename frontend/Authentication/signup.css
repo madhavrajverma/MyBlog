@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  z-index: 100;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 12px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #6246EA;
+  font-weight: bold;
+}
+
+.buy-btn-text ,.sign-in-btn-text{
+    padding: 20px;
+    background-color:#6246EA;
+    border-radius: 10px;
+    margin:0rem 1rem;
+}
+
+.buy-cofee-img {
+    border-radius: 12px;
+    margin-right:0.5rem;
+}
+.buy-btn-text {
+    display:flex;
+    align-items: center;
+}
+
+.buy-btn a,.sign-in-btn a {
+    color: #fff;
+}
+.sign-in-btn-text p {
+    display: inline-block;
+}
+
+.buy-btn-text:hover,.sign-in-btn:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: all 0.3s ease-in-out;
+}
+
+.buy-btn a:hover,.sign-in-btn a:hover {
+    color: #fff;
+}
+
+
+
+.fcontainer{
+  display : grid;
+  position : relative;
+  top : 80px;
+  margin : 50px 50px 180px 50px;
+
+}
+.signup-title {
+  font-size: 2rem;
+}
+.signin {
+  margin : 10px auto;
+  
+}
+
+body {
+  color: #333;
+}
+
+form {
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: solid 1px #ddd;
+}
+
+input {
+  padding: 0.6rem;
+  border: solid 1px #bbb;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  padding: 0.75rem 2.25rem;
+  border: 1px solid #6246EA;
+  border-radius: 30px;
+  background-color: #6246EA;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.6rem 3rem;
+  align-items: center;
+}
+
+button {
+  grid-column-end: -1;
+}
+
+@media screen and (max-width: 530px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*footer */
+
+footer {
+  display:flex;
+  padding: 40px;
+  background-color: #3F3F3F;
+  justify-content: space-around;
+  
+  grid-column:  -1;
+  
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+   gap:2rem;
+}
+.footer-col h3 {
+  color: #fff;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction:column;
+  list-style: none;
+  gap:1rem;
+  color: #fff;
+}
+.footer-col li {
+  cursor: pointer;
+}
+.quick_link {
+  display:flex;
+  gap:4rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.social-icon {
+  display: flex;
+  gap:1rem;
+}
+.social-icon i {
+
+  cursor: pointer;
+  flex-direction: row;
+  font-size:2rem;
+  color:white;
+}

@@ -10,6 +10,9 @@
     <title>Home</title>
 </head>
 <body>
+
+  <div class="backdrop"></div>
+
     <!-- Section - 1 -->
    <section class="section-1">
     <nav class="nav">
@@ -18,7 +21,19 @@
           <ul>
             <li><a href="#" class="current">Home</a></li>
             <li><a href="#">Category</a></li>
-            <li><a href="#">Search</a></li>
+            <li class="search_bar_container">
+              <form>
+                <input type="text">
+                <a href="#" class="search_btn">
+                  <i class="fa-solid fa-magnifying-glass">
+                </i></a>
+               </form>
+                <a  class= "cancel_Search"href="">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
+            </li> 
+
+            <li><a  class="search_btn_text" href="#">Search</a></li>
             <li class = "buy-btn">
                 <a class="buy-btn-text" href="#"> 
                     <img width = "20"  class="buy-cofee-img" src="images/bmc-logo.png" alt=""> 
@@ -26,7 +41,7 @@
                 </a>
             </li>
             <li class = "sign-in-btn">
-                <a class="sign-in-btn-text" href="#">
+                <a class="sign-in-btn-text" href="../Authentication/signin.html">
                    <p>Sign In</p>
                 </a>
             </li>
@@ -341,7 +356,6 @@
       </div>
     </div>
    </section>
-
    <footer class="footer">
     <div class="footer-col">
       <div class="logo">
@@ -373,6 +387,62 @@
     </div>
     
   </footer>
+
+  <div class="search_results_container">
+    <div class="close_searh_result_btn">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="search_results">
+      <div class="search_result">
+        <h2 class="search_title">SwiftUI VS UIKIt , Which is better?</h2>
+        <div class="search_author_detail">
+          <p class="search_author_name">
+            Madhav Raj Verma
+          </p>
+        </div>
+      </div>
+      <div class="search_result">
+        <h2 class="search_title">SwiftUI VS UIKIt , Which is better?</h2>
+        <div class="search_author_detail">
+          <p class="search_author_name">
+            Madhav Raj Verma
+          </p>
+        </div>
+      </div>
+      <div class="search_result">
+        <h2 class="search_title">SwiftUI VS UIKIt , Which is better?</h2>
+        <div class="search_author_detail">
+          <p class="search_author_name">
+            Madhav Raj Verma
+          </p>
+        </div>
+      </div>
+      <div class="search_result">
+        <h2 class="search_title">SwiftUI VS UIKIt , Which is better?</h2>
+        <div class="search_author_detail">
+          <p class="search_author_name">
+            Madhav Raj Verma
+          </p>
+        </div>
+      </div>
+      <div class="search_result">
+        <h2 class="search_title">SwiftUI VS UIKIt , Which is better?</h2>
+        <div class="search_author_detail">
+          <p class="search_author_name">
+            Madhav Raj Verma
+          </p>
+        </div>
+      </div>
+      <div class="search_result">
+        <h2 class="search_title">SwiftUI VS UIKIt , Which is better?</h2>
+        <div class="search_author_detail">
+          <p class="search_author_name">
+            Madhav Raj Verma
+          </p>
+        </div>
+      </div>
+    </div>
+   </div>
 
    <script src="script.js"></script>
 </body>
